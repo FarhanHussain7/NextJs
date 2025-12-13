@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 import { useState, useEffect } from 'react';
 
 export default function About() {
@@ -35,6 +36,9 @@ export default function About() {
             >
                 Toggle {theme === 'light' ? 'Dark' : 'Light'} Mode
             </button>
+
+            <Link href="/about/aboutCollage">Go to About Collage</Link>
+            <Link href="/about/aboutStudent">Go to About Student</Link>
         </div>
     );
 }

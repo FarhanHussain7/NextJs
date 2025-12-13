@@ -1,10 +1,15 @@
 'use client'
 import Image from "next/image";
 import { useState } from "react";
-
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 export default function Home() {
 
   const [name,setName] = useState("Farhan");
+  const router = useRouter();
+  const navigate = (route)=>{
+    router.push(route);
+  }
 
   const who = (props)=>{
     alert(props)
@@ -35,6 +40,14 @@ export default function Home() {
     
     {/* Inner Component */}
     <InnerComp/>
+
+    {/* Link */}
+
+    <Link href="/login" className="border-4 bg-sky-400 text-white mt-5 p-2 w-60 rounded-3xl">Go to Login </Link>
+    
+    {/* Navigation */}
+    <button onClick={()=>router.push("/login")}>Go to Login</button>
+    <button onClick={()=>navigate("/about")}>Go to About</button>
     </div>
   );
 }
