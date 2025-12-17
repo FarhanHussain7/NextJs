@@ -40,6 +40,9 @@ export default function RootLayout({ children }) {
         // Apply the font variables and enable antialiasing for cleaner text.
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+
+        {
+          pathname !== "/login/teacher" ?
         <ul className="site-header">
           <li>
             <Link href="/" className="nav-link">
@@ -62,6 +65,8 @@ export default function RootLayout({ children }) {
             </Link>
           </li>
         </ul>
+        :null 
+}
 
         {children}
       </body>
