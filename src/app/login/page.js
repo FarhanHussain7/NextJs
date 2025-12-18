@@ -1,4 +1,5 @@
 "use client"
+// Login page with navigation to student login
 import { useRouter } from 'next/navigation';
 
 const Login = () => {

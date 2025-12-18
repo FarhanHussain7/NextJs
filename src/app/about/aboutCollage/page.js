@@ -1,4 +1,5 @@
 "use client"
+// Nested page demonstrating useRouter for navigation
 import Link from 'next/link'
 import React from 'react'
 import { useRouter } from 'next/navigation';

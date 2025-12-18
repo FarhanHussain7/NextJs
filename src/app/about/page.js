@@ -1,4 +1,5 @@
 'use client';
+// About page with dynamic stats and theme toggle
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 

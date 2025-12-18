@@ -1,3 +1,4 @@
+// Nested page component under /about demonstrating basic routing
 import React from 'react'
 
 export default function Page() {

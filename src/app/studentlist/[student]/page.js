@@ -1,3 +1,5 @@
+// app/studentlist/[student]/page.js
+// Student detail page displaying information based on dynamic route parameter
 export default async function StudentPage({ params }) {
   const { student } = await params;
 

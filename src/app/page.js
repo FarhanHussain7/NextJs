@@ -1,4 +1,6 @@
 'use client'
+// Main Home page component with state management and navigation
+// It is the entry point of the application.
 import Image from "next/image";
 import { useState } from "react";
 import Link from "next/link";

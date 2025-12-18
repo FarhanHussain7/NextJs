@@ -1,4 +1,5 @@
 // app/studentlist/page.js
+// Student List page displaying a list of students with links to their details
 import Link from "next/link";
 
 export default function StudentListPage() {

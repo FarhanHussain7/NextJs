@@ -1,4 +1,8 @@
 "use client";
+// Root layout component for the Next.js App Router.
+// This file defines the top-level layout structure for all pages in the app.
+// It includes global styles, font configurations, and navigation links.
+// Imports
 
 
 // Load Google fonts using Next.js font optimization helper.
@@ -60,8 +64,8 @@ export default function RootLayout({ children }) {
             </Link>
           </li>
           <li>
-            <Link href="/contact" className="nav-link">
-              Contact
+            <Link href="/topics" className="nav-link">
+              Topics
             </Link>
           </li>
         </ul>
