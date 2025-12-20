@@ -50,6 +50,7 @@ export default function Home() {
     {/* Navigation */}
     <button onClick={()=>router.push("/login")}>Go to Login</button>
     <button onClick={()=>navigate("/about")}>Go to About</button>
+    <Link href="/api" className="border-4 bg-sky-400 text-white mt-5 p-2 w-60 rounded-3xl">API Call</Link>
     </div>
   );
 }
