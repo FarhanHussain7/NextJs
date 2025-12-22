@@ -11,14 +11,11 @@ const Login = () => {
   return (
     <div style={{width: '100%'}}>
       <header className="">
-        <h1 style={{margin:0}}>Login</h1>
+        <h1 style={{margin:0}}> Login Routing page</h1>
       </header>
-
-      <p>page</p>
-
       <div>
         <button onClick={() => navigate("loginStudent")}>
-          Go to Login Student
+          Go to Login Student (nested route)
         </button>
       </div>
     </div>

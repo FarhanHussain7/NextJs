@@ -1,5 +1,9 @@
 'use client';
 // About page with dynamic stats and theme toggle
+// Routing is a part of this page with links to nested routes
+// Routing in nextjs is done using Link component from next/link
+// This page also demonstrates useState and useEffect hooks for dynamic behavior
+
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 

@@ -12,7 +12,7 @@ export default function Home() {
   const navigate = (route)=>{
     router.push(route);
   }
-
+// Dynamic function to update state
   const who = (props)=>{
     alert(props)
     setName("Farhan Hussain")
@@ -30,27 +30,41 @@ export default function Home() {
   return (
     <div>
     <div className="flex h-50 justify-center items-center bg-orange-200">
-      <h1 className="w-50 text-center text-white border-2 bg-blue-300 border-amber-300 rounded-2xl">Your Page || {name}</h1>
+      <h1 className="w-50 text-center text-white border-2 bg-blue-300 border-amber-300 rounded-2xl"> Next Js || By : {name}</h1>
      </div>
+     <ul className="flex justify-between">
+      <li>
+
+      </li>
+      <li>
       <User name="Farhan Hussain"/>
-      <User name="Kaif Hussain"/>
+      </li>
+      <li>
+        <User name="Kaif hussain"/>
+        </li>   
+        <li>
       <User name="Jihan Hussain"/>
+        </li>
+          </ul>
     {/* Static button  */}
-      <button className="bg-blue-400 text-white border-amber-200 rounded-3xl w-20" onClick={()=>alert("Just click the button")}>Click</button>
+      <button className="bg-blue-400 text-white border-amber-200 rounded-3xl w-20" onClick={()=>alert("Just click the button")}>Static button</button>
     {/* Dynamic Button with State */}
-      <button className="bg-rose-400 text-white border-amber-200 rounded-3xl w-50" onClick={()=>who("Farhan Hussain")}>Name please</button>
+      <button className="bg-rose-400 text-white border-amber-200 rounded-3xl w-50" onClick={()=>who("Farhan Hussain")}>Dynamic button</button>
     
     {/* Inner Component */}
     <InnerComp/>
 
-    {/* Link */}
 
+
+    {/* Link */}
     <Link href="/login" className="border-4 bg-sky-400 text-white mt-5 p-2 w-60 rounded-3xl">Go to Login </Link>
     
     {/* Navigation */}
     <button onClick={()=>router.push("/login")}>Go to Login</button>
     <button onClick={()=>navigate("/about")}>Go to About</button>
-    <Link href="/api" className="border-4 bg-sky-400 text-white mt-5 p-2 w-60 rounded-3xl">API Call</Link>
+    
+    <Link href="/api/ClientApi" className="border-4 bg-sky-400 text-white mt-5 p-2 w-60 rounded-3xl">API Call (Client)</Link>
+    <Link href="/api/serverApi" className="border-4 bg-sky-400 text-white mt-5 p-2 w-60 rounded-3xl">API Call (Server)</Link>
     </div>
   );
 }
